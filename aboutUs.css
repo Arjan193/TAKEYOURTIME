@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dbc096;
+}
+
+header {
+  background-color: #8f633d;
+  color: white;
+  padding: 15px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  font-size: bold;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  
+  .hero-image img {
+    max-width: 900px;
+    width: 90%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  }
+
+  .about-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fdf3e7;
+    color: #3a2c1e;
+  }
+  
+  .about-section .highlight {
+    font-style: italic;
+  }
+  
+  .about-text {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 20px auto 40px;
+    line-height: 1.6;
+    font-weight: 600;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* forces 3 per row */
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .member {
+    background-color: #c09b5f;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .member img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .member:hover img {
+    transform: scale(1.05);
+  }
+  
+  .member p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
